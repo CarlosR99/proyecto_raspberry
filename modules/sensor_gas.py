@@ -1,4 +1,4 @@
-import RPi.GPIO as GPIO  # Importa la biblioteca para controla
+import RPi.GPIO as GPIO  # Importa la 
 import time  # Importa la biblioteca para controlar el tiempo
 import modulos.envio_correos as envio_correos # se sugiere usar la rupta para nuestro proyecto...
 
