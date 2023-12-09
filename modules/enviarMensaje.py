@@ -5,7 +5,7 @@ from email.mime.text import MIMEText
 
 def enviar(destinatario, asunto, cuerpo):
     msg = MIMEMultipart()
-    msg['From'] = 'tu_correo@gmail.com'
+    msg['From'] = 'juan.jose.agudelo@correounivalle.edu.co'
     msg['To'] = destinatario
     msg['Subject'] = asunto
 
@@ -13,6 +13,6 @@ def enviar(destinatario, asunto, cuerpo):
 
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login(msg['From'], 'tu_contraseña')
+    server.login(msg['From'], 'dfcp eyho pjrk ckiv')
     server.sendmail(msg['From'], msg['To'], msg.as_string())
     server.quit()

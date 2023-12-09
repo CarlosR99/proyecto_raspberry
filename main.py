@@ -15,23 +15,23 @@ pines_sensor_incendio = (18, 19)
 
 def verificar_sensor_ventana():
     if sensor_ventana.detectar(*pines_sensor_ventana):
-        envio_correos.enviar('destinatario@gmail.com', 'Alerta de ventana', 'La ventana de la sala está abierta.')
+        envio_correos.enviar('juan.jose.agudelo@correounivalle.edu.co', 'Alerta de ventana', 'La ventana de la sala está abierta.')
 
 def verificar_sensor_ventana_habitacion():
     if sensor_ventana_habitacion.detectar(*pines_sensor_ventana_habitacion):
-        envio_correos.enviar('destinatario@gmail.com', 'Alerta de ventana habitación', 'La ventana de la habitación está abierta.')
+        envio_correos.enviar('juan.jose.agudelo@correounivalle.edu.co', 'Alerta de ventana habitación', 'La ventana de la habitación está abierta.')
 
 def verificar_sensor_puerta():
     if sensor_puerta.detectar(*pines_sensor_puerta):
-        envio_correos.enviar('destinatario@gmail.com', 'Alerta de puerta', 'La puerta está abierta.')
+        envio_correos.enviar('juan.jose.agudelo@correounivalle.edu.co', 'Alerta de puerta', 'La puerta está abierta.')
 
 def verificar_sensor_gas():
     if sensor_gas.detectar(*pines_sensor_gas):
-        envio_correos.enviar('destinatario@gmail.com', 'Alerta de gas', 'Se detectó gas.')
+        envio_correos.enviar('juan.jose.agudelo@correounivalle.edu.co', 'Alerta de gas', 'Se detectó gas.')
 
 def verificar_sensor_incendio():
     if sensor_incendio.detectar(*pines_sensor_incendio):
-        envio_correos.enviar('destinatario@gmail.com', 'Alerta de incendio', 'Se detectó un incendio.')
+        envio_correos.enviar('juan.jose.agudelo@correounivalle.edu.co', 'Alerta de incendio', 'Se detectó un incendio.')
 
 while True:
     verificar_sensor_ventana()
